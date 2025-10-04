@@ -31,6 +31,8 @@ public class ModBlocks {
     public static final DeferredRegister<Block> BLOCKS =
             DeferredRegister.create(ForgeRegistries.BLOCKS, FreeMod.MOD_ID);
 
+    
+
     //これ以降に登録
     public static final RegistryObject<Block> ACID_TANK = registerBlock("acid_tank",
             () -> new AcidTank(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).noOcclusion()),FreeModTab.FREEMOD_TAB);
