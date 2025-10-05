@@ -21,6 +21,9 @@ public class ModItems {
     public static final RegistryObject<Item> PLATINUM = ITEMS.register("platinum",
             () -> new Item(new Item.Properties().tab(FreeModTab.FREEMOD_TAB)));
 
+    public static final RegistryObject<Item> PLATINUM_INGOT = ITEMS.register("platinum_ingot",
+            () -> new Item(new Item.Properties().tab(FreeModTab.FREEMOD_TAB)));
+
     public static final RegistryObject<Item> CHORUS_FLY_FRUIT = ITEMS.register("chorus_fly_fluit", ChorusFlyFruit::new);
 
     //public static final RegistryObject<SwordItem> BIG_AXE = ITEMS.register("big_axe", BigAxeItem::new);
