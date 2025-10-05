@@ -37,6 +37,15 @@ public class ModBlocks {
     public static final RegistryObject<Block> ACID_TANK = registerBlock("acid_tank",
             () -> new AcidTank(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).noOcclusion()),FreeModTab.FREEMOD_TAB);
 
+    public static final RegistryObject<Block>PLATINUM_ORE = registerBlock("platinum_ore",
+            () -> new OreBlock(BlockBehaviour.Properties.of(Material.STONE) //part 40 UniformInt.of(3,7)の追加　経験値ドロップ
+                    .strength(5f).requiresCorrectToolForDrops(), UniformInt.of(3,7)), FreeModTab.FREEMOD_TAB);
+
+    public static final RegistryObject<Block>DEEPSLATE_PLATINUM_ORE = registerBlock("deepslate_platinum_ore",
+            () -> new OreBlock(BlockBehaviour.Properties.of(Material.STONE) //part 40 UniformInt.of(3,7)の追加　経験値ドロップ
+                    .strength(5f).requiresCorrectToolForDrops(), UniformInt.of(3,7)), FreeModTab.FREEMOD_TAB);
+
+
     //Tutorialmod Testing 25-5-24
     public static final RegistryObject<Block> EBONY_LOG = registerBlock("ebony_log",
             () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG)),
