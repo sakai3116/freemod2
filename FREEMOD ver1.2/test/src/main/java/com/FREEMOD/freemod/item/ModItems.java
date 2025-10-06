@@ -21,11 +21,22 @@ public class ModItems {
             () -> new Item(new Item.Properties().tab(FreeModTab.FREEMOD_TAB)));
     public static final RegistryObject<Item> PLATINUM_INGOT = ITEMS.register("platinum_ingot",
             () -> new Item(new Item.Properties().tab(FreeModTab.FREEMOD_TAB)));
-
+    //プラチナツール系
     public static final RegistryObject<Item> PLATINUM_SWORD = ITEMS.register("platinum_sword",
             () -> new SwordItem(ModTiers.PLATINUM,3,2F,
                     new Item.Properties().tab(FreeModTab.FREEMOD_TAB)));
-
+    public static final RegistryObject<Item> PLATINUM_AXE = ITEMS.register("platinum_axe",
+            () -> new AxeItem(ModTiers.PLATINUM,3,2F,
+                    new Item.Properties().tab(FreeModTab.FREEMOD_TAB)));
+    public static final RegistryObject<Item> PLATINUM_PICKAXE = ITEMS.register("platinum_pickaxe",
+            () -> new PickaxeItem(ModTiers.PLATINUM,3,2F,
+                    new Item.Properties().tab(FreeModTab.FREEMOD_TAB)));
+    public static final RegistryObject<Item> PLATINUM_SHOVEL = ITEMS.register("platinum_shovel",
+            () -> new ShovelItem(ModTiers.PLATINUM,3,2F,
+                    new Item.Properties().tab(FreeModTab.FREEMOD_TAB)));
+    public static final RegistryObject<Item> PLATINUM_HOE = ITEMS.register("platinum_hoe",
+            () -> new HoeItem(ModTiers.PLATINUM,3,2F,
+                    new Item.Properties().tab(FreeModTab.FREEMOD_TAB)));
 
 
     public static final RegistryObject<Item> CHORUS_FLY_FRUIT = ITEMS.register("chorus_fly_fluit", ChorusFlyFruit::new);
