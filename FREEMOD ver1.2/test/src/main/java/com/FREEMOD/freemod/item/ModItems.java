@@ -3,6 +3,7 @@ package com.FREEMOD.freemod.item;
 import com.FREEMOD.freemod.FreeMod;
 import com.FREEMOD.freemod.fluid.AcidFluid;
 import com.FREEMOD.freemod.item.custom.ChorusFlyFruit;
+import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.item.*;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -36,6 +37,19 @@ public class ModItems {
                     new Item.Properties().tab(FreeModTab.FREEMOD_TAB)));
     public static final RegistryObject<Item> PLATINUM_HOE = ITEMS.register("platinum_hoe",
             () -> new HoeItem(ModTiers.PLATINUM,1,0F,
+                    new Item.Properties().tab(FreeModTab.FREEMOD_TAB)));
+
+    public static final RegistryObject<Item> PLATINUM_HELMET = ITEMS.register("platinum_helmet",
+            () -> new ArmorItem(ModArmorMaterials.PLATINUM, EquipmentSlot.HEAD,
+                    new Item.Properties().tab(FreeModTab.FREEMOD_TAB)));
+    public static final RegistryObject<Item> PLATINUM_CHESTPLATE = ITEMS.register("platinum_chestplate",
+            () -> new ArmorItem(ModArmorMaterials.PLATINUM, EquipmentSlot.CHEST,
+                    new Item.Properties().tab(FreeModTab.FREEMOD_TAB)));
+    public static final RegistryObject<Item> PLATINUM_LEGGINGS = ITEMS.register("platinum_leggings",
+            () -> new ArmorItem(ModArmorMaterials.PLATINUM, EquipmentSlot.LEGS,
+                    new Item.Properties().tab(FreeModTab.FREEMOD_TAB)));
+    public static final RegistryObject<Item> PLATINUM_BOOTS = ITEMS.register("platinum_boots",
+            () -> new ArmorItem(ModArmorMaterials.PLATINUM, EquipmentSlot.FEET,
                     new Item.Properties().tab(FreeModTab.FREEMOD_TAB)));
 
 
