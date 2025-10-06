@@ -17,12 +17,16 @@ public class ModItems {
     public static final RegistryObject<Item> ACID_BUCKET = ITEMS.register("acid_bucket",
             () -> new BucketItem(AcidFluid.ACID_FLUID,
                     new Item.Properties().tab(FreeModTab.FREEMOD_TAB).stacksTo(1)));
-
     public static final RegistryObject<Item> PLATINUM = ITEMS.register("platinum",
             () -> new Item(new Item.Properties().tab(FreeModTab.FREEMOD_TAB)));
-
     public static final RegistryObject<Item> PLATINUM_INGOT = ITEMS.register("platinum_ingot",
             () -> new Item(new Item.Properties().tab(FreeModTab.FREEMOD_TAB)));
+
+    public static final RegistryObject<Item> PLATINUM_SWORD = ITEMS.register("platinum_sword",
+            () -> new SwordItem(ModTiers.PLATINUM,3,2F,
+                    new Item.Properties().tab(FreeModTab.FREEMOD_TAB)));
+
+
 
     public static final RegistryObject<Item> CHORUS_FLY_FRUIT = ITEMS.register("chorus_fly_fluit", ChorusFlyFruit::new);
 
