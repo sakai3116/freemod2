@@ -41,6 +41,7 @@ public class ModBlocks {
     public static final RegistryObject<Block> EBONY_LOG = registerBlock("ebony_log",
             () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG)),
             FreeModTab.FREEMOD_TAB);
+    
     public static final RegistryObject<Block> EBONY_WOOD = registerBlock("ebony_wood",
             () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD)),
             FreeModTab.FREEMOD_TAB);
