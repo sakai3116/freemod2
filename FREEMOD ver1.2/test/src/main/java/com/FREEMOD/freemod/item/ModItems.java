@@ -53,7 +53,7 @@ public class ModItems {
                     new Item.Properties().tab(FreeModTab.FREEMOD_TAB)));
 
 
-    public static final RegistryObject<Item> CHORUS_FLY_FRUIT = ITEMS.register("chorus_fly_fluit", ChorusFlyFruit::new);
+    public static final RegistryObject<Item> CHORUS_FLY_FRUIT = ITEMS.register("chorus_fly_fruit", ChorusFlyFruit::new);
 
     //public static final RegistryObject<SwordItem> BIG_AXE = ITEMS.register("big_axe", BigAxeItem::new);
 
