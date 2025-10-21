@@ -4,6 +4,7 @@ import com.FREEMOD.freemod.block.ModBlocks;
 import com.FREEMOD.freemod.effect.ModEffects;
 import com.FREEMOD.freemod.fluid.AcidFluid;
 import com.FREEMOD.freemod.item.ModItems;
+import com.FREEMOD.freemod.world.dimension.ModDimensions;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.world.level.block.Blocks;
@@ -36,6 +37,8 @@ public class FreeMod {
 //        OnsenFluid.register(eventBus);
         AcidFluid.register(eventBus);
         ModEffects.register(eventBus);
+
+        ModDimensions.register();
 
 
         eventBus.addListener(this::setup);
