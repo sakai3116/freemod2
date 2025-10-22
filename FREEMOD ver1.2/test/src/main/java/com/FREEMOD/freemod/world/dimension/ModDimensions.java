@@ -11,11 +11,11 @@ import net.minecraft.world.level.dimension.DimensionType;
 import java.awt.*;
 
 public class ModDimensions {
-    public static final ResourceKey<Level> KJDIM_KEY = ResourceKey.create(Registry.DIMENSION_REGISTRY,
-            new ResourceLocation(FreeMod.MOD_ID,"kjdim"));
+    public static final ResourceKey<Level> OBLIVION_WORLD = ResourceKey.create(Registry.DIMENSION_REGISTRY,
+            new ResourceLocation(FreeMod.MOD_ID,"oblivion_world"));
 
     public static final ResourceKey<DimensionType> KJDIM_TYPE =
-            ResourceKey.create(Registry.DIMENSION_TYPE_REGISTRY,KJDIM_KEY.getRegistryName());
+            ResourceKey.create(Registry.DIMENSION_TYPE_REGISTRY,OBLIVION_WORLD.getRegistryName());
 
     public static void register(){
         System.out.println("Registering ModDimensions for " + FreeMod.MOD_ID);
