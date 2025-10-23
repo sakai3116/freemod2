@@ -1,5 +1,6 @@
 package com.FREEMOD.freemod;
 
+import com.FREEMOD.freemod.ModVillagers.ModPOIs;
 import com.FREEMOD.freemod.block.ModBlocks;
 import com.FREEMOD.freemod.effect.ModEffects;
 import com.FREEMOD.freemod.fluid.AcidFluid;
@@ -39,6 +40,8 @@ public class FreeMod {
         ModEffects.register(eventBus);
 
         ModDimensions.register();
+
+        ModPOIs.register(eventBus);
 
 
         eventBus.addListener(this::setup);

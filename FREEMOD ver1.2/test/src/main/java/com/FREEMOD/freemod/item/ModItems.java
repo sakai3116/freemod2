@@ -2,6 +2,7 @@ package com.FREEMOD.freemod.item;
 
 import com.FREEMOD.freemod.FreeMod;
 import com.FREEMOD.freemod.fluid.AcidFluid;
+import com.FREEMOD.freemod.item.custom.CatalystItem;
 import com.FREEMOD.freemod.item.custom.ChorusFlyFruit;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.item.*;
@@ -54,6 +55,9 @@ public class ModItems {
 
 
     public static final RegistryObject<Item> CHORUS_FLY_FRUIT = ITEMS.register("chorus_fly_fruit", ChorusFlyFruit::new);
+
+    public static final RegistryObject<Item> CATALYST_ITEM = ITEMS.register("catalyst_item", CatalystItem::new);
+
 
     //public static final RegistryObject<SwordItem> BIG_AXE = ITEMS.register("big_axe", BigAxeItem::new);
 
