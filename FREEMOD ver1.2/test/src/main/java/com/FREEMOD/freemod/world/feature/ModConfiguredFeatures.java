@@ -34,7 +34,7 @@ public class ModConfiguredFeatures {
     // 小・中・大の木の設定
     public static final Holder<ConfiguredFeature<TreeConfiguration, ?>> EBONY_TREE_SMALL = createEbonyTreeConfig("ebony_small", 3, 2, 1, 2, 0, 2);
     public static final Holder<ConfiguredFeature<TreeConfiguration, ?>> EBONY_TREE_NORMAL = createEbonyTreeConfig("ebony_normal", 3, 5, 2, 3, 0, 3);
-    public static final Holder<ConfiguredFeature<TreeConfiguration, ?>> EBONY_TREE_LARGE = createEbonyTreeConfig("ebony_large", 4, 4, 4, 5, 0, 4);
+    //public static final Holder<ConfiguredFeature<TreeConfiguration, ?>> EBONY_TREE_LARGE = createEbonyTreeConfig("ebony_large", 4, 4, 4, 5, 0, 4);
 
     // PlacedFeature（成長可能条件付き）
     private static Holder<PlacedFeature> createCheckedEbonyFeature(String name, Holder<ConfiguredFeature<TreeConfiguration, ?>> config) {
@@ -44,15 +44,15 @@ public class ModConfiguredFeatures {
 
     public static final Holder<PlacedFeature> EBONY_CHECKED_SMALL = createCheckedEbonyFeature("ebony_checked_small", EBONY_TREE_SMALL);
     public static final Holder<PlacedFeature> EBONY_CHECKED_NORMAL = createCheckedEbonyFeature("ebony_checked_normal", EBONY_TREE_NORMAL);
-    public static final Holder<PlacedFeature> EBONY_CHECKED_LARGE = createCheckedEbonyFeature("ebony_checked_large", EBONY_TREE_LARGE);
+    //public static final Holder<PlacedFeature> EBONY_CHECKED_LARGE = createCheckedEbonyFeature("ebony_checked_large", EBONY_TREE_LARGE);
 
     // ランダムに木を生成
     public static final Holder<ConfiguredFeature<RandomFeatureConfiguration, ?>> EBONY_SPAWN =
             FeatureUtils.register("ebony_spawn", Feature.RANDOM_SELECTOR,
                     new RandomFeatureConfiguration(List.of(
                             new WeightedPlacedFeature(EBONY_CHECKED_SMALL, 0.3F),
-                            new WeightedPlacedFeature(EBONY_CHECKED_NORMAL, 0.5F),
-                            new WeightedPlacedFeature(EBONY_CHECKED_LARGE, 0.2F)
+                            new WeightedPlacedFeature(EBONY_CHECKED_NORMAL, 0.5F)
+                            //new WeightedPlacedFeature(EBONY_CHECKED_LARGE, 0.2F)
                     ), EBONY_CHECKED_NORMAL));
 
 
