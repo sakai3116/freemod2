@@ -4,6 +4,7 @@ import com.FREEMOD.freemod.block.ModBlocks;
 import com.FREEMOD.freemod.effect.ModEffects;
 import com.FREEMOD.freemod.fluid.AcidFluid;
 import com.FREEMOD.freemod.item.ModItems;
+import com.FREEMOD.freemod.villager.ModPOIs;
 import com.FREEMOD.freemod.world.dimension.ModDimensions;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
@@ -39,6 +40,8 @@ public class FreeMod {
         ModEffects.register(eventBus);
 
         ModDimensions.register();
+
+        ModPOIs.register(eventBus);
 
 
         eventBus.addListener(this::setup);
