@@ -2,7 +2,7 @@ package com.FREEMOD.freemod.item;
 
 import com.FREEMOD.freemod.FreeMod;
 import com.FREEMOD.freemod.fluid.AcidFluid;
-import com.FREEMOD.freemod.item.custom.CatalystItem;
+import com.FREEMOD.freemod.item.custom.WorldLineItem;
 import com.FREEMOD.freemod.item.custom.ChorusFlyFruit;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.item.*;
@@ -53,7 +53,7 @@ public class ModItems {
             () -> new ArmorItem(ModArmorMaterials.PLATINUM, EquipmentSlot.FEET,
                     new Item.Properties().tab(FreeModTab.FREEMOD_TAB)));
 
-    public static final RegistryObject<Item> CATALYST_ITEM = ITEMS.register("catalyst_item", CatalystItem::new);
+    public static final RegistryObject<Item> WORLD_LINE = ITEMS.register("world_line", WorldLineItem::new);
 
     public static final RegistryObject<Item> CHORUS_FLY_FRUIT = ITEMS.register("chorus_fly_fruit", ChorusFlyFruit::new);
 

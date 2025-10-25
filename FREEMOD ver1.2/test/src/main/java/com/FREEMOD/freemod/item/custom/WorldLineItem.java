@@ -14,8 +14,8 @@ import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.context.UseOnContext;
 import net.minecraft.world.level.Level;
 
-public class CatalystItem extends Item {
-    public CatalystItem() {
+public class WorldLineItem extends Item {
+    public WorldLineItem() {
         super(new Properties()
                 .tab(FreeModTab.FREEMOD_TAB)
                 .stacksTo(1)
