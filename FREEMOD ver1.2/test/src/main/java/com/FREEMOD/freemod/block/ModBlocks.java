@@ -3,6 +3,7 @@ package com.FREEMOD.freemod.block;
 import com.FREEMOD.freemod.FreeMod;
 import com.FREEMOD.freemod.block.custom.AcidTank;
 import com.FREEMOD.freemod.block.custom.ModFlammableRotatedPillarBlock;
+import com.FREEMOD.freemod.block.custom.OblivionPortalBlock;
 import com.FREEMOD.freemod.item.FreeModTab;
 import com.FREEMOD.freemod.item.ModItems;
 import com.FREEMOD.freemod.world.feature.tree.EbonyTreeGrower;
@@ -34,12 +35,17 @@ public class ModBlocks {
     //これ以降に登録
     public static final RegistryObject<Block> ACID_TANK = registerBlock("acid_tank",
             () -> new AcidTank(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).noOcclusion()),FreeModTab.FREEMOD_TAB);
-    public static final RegistryObject<Block>PLATINUM_ORE = registerBlock("platinum_ore",
+    public static final RegistryObject<Block> PLATINUM_ORE = registerBlock("platinum_ore",
             () -> new OreBlock(BlockBehaviour.Properties.of(Material.STONE) //part 40 UniformInt.of(3,7)の追加　経験値ドロップ
                     .strength(5f).requiresCorrectToolForDrops(), UniformInt.of(3,7)), FreeModTab.FREEMOD_TAB);
-    public static final RegistryObject<Block>DEEPSLATE_PLATINUM_ORE = registerBlock("deepslate_platinum_ore",
+    public static final RegistryObject<Block> DEEPSLATE_PLATINUM_ORE = registerBlock("deepslate_platinum_ore",
             () -> new OreBlock(BlockBehaviour.Properties.of(Material.STONE) //part 40 UniformInt.of(3,7)の追加　経験値ドロップ
                     .strength(5f).requiresCorrectToolForDrops(), UniformInt.of(3,7)), FreeModTab.FREEMOD_TAB);
+
+    public static final RegistryObject<Block> OBLIVION_PORTAL_GATE_BLOCK = registerBlock("oblivion_portal_gate_block",
+            () -> new Block(BlockBehaviour.Properties.of(Material.STONE).strength(9f)),FreeModTab.FREEMOD_TAB);
+
+    public static final RegistryObject<Block> OBLIVION_PORTAL = registerBlockWithoutBlockItem("oblivion_portal", OblivionPortalBlock::new);
 
 
     //Tutorialmod Testing 25-5-24
@@ -106,7 +112,9 @@ public class ModBlocks {
             () -> new SaplingBlock(new EbonyTreeGrower(),BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)), FreeModTab.FREEMOD_TAB);
 
 
-
+    private static <T extends Block> RegistryObject<T> registerBlockWithoutBlockItem(String name, Supplier<T> block) {
+        return BLOCKS.register(name, block);
+    }
 
     //part 12 25-2-19 8:17
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block,
@@ -138,7 +146,6 @@ public class ModBlocks {
         return ModItems.ITEMS.register(name, () -> new BlockItem(block.get(),
                 new Item.Properties().tab(tab)));
     }
-
 
     public static void register(IEventBus eventBus){
         BLOCKS.register(eventBus);
