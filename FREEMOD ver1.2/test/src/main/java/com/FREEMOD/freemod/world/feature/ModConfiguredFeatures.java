@@ -34,7 +34,7 @@ public class ModConfiguredFeatures {
             PlacementUtils.filteredByBlockSurvival(ModBlocks.OBLIVION_SAPLING.get()));
 
     public static final Holder<ConfiguredFeature<RandomFeatureConfiguration, ?>> OBLIVION_SPAWN =
-            FeatureUtils.register("ebony_spawn", Feature.RANDOM_SELECTOR,
+            FeatureUtils.register("oblivion_spawn", Feature.RANDOM_SELECTOR,
                     new RandomFeatureConfiguration(List.of(new WeightedPlacedFeature(OBLIVION_CHECKED,
                             0.5F)), OBLIVION_CHECKED));
 
