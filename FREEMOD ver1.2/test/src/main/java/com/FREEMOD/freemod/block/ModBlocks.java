@@ -6,7 +6,7 @@ import com.FREEMOD.freemod.block.custom.ModFlammableRotatedPillarBlock;
 import com.FREEMOD.freemod.block.custom.OblivionPortalBlock;
 import com.FREEMOD.freemod.item.FreeModTab;
 import com.FREEMOD.freemod.item.ModItems;
-import com.FREEMOD.freemod.world.feature.tree.EbonyTreeGrower;
+import com.FREEMOD.freemod.world.feature.tree.OblivionTreeGrower;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.network.chat.Component;
@@ -33,6 +33,19 @@ public class ModBlocks {
             DeferredRegister.create(ForgeRegistries.BLOCKS, FreeMod.MOD_ID);
     
     //これ以降に登録
+    public static final RegistryObject<Block> OBLIVION_LOG = registerBlock("oblivion_log",
+            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG)),
+            FreeModTab.FREEMOD_TAB);
+    public static final RegistryObject<Block> OBLIVION_WOOD = registerBlock("oblivion_wood",
+            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD)),
+            FreeModTab.FREEMOD_TAB);
+    public static final RegistryObject<Block> STRIPPED_OBLIVION_LOG = registerBlock("stripped_oblivion_log",
+            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_LOG)),
+            FreeModTab.FREEMOD_TAB);
+    public static final RegistryObject<Block> STRIPPED_OBLIVION_WOOD = registerBlock("stripped_oblivion_wood",
+            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_WOOD)),
+            FreeModTab.FREEMOD_TAB);
+
     public static final RegistryObject<Block> ACID_TANK = registerBlock("acid_tank",
             () -> new AcidTank(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).noOcclusion()),FreeModTab.FREEMOD_TAB);
     public static final RegistryObject<Block> PLATINUM_ORE = registerBlock("platinum_ore",
@@ -49,18 +62,18 @@ public class ModBlocks {
 
 
     //Tutorialmod Testing 25-5-24
-    public static final RegistryObject<Block> EBONY_LOG = registerBlock("ebony_log",
-            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG)),
-            FreeModTab.FREEMOD_TAB);
-    public static final RegistryObject<Block> EBONY_WOOD = registerBlock("ebony_wood",
-            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD)),
-            FreeModTab.FREEMOD_TAB);
-    public static final RegistryObject<Block> STRIPPED_EBONY_LOG = registerBlock("stripped_ebony_log",
-            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_LOG)),
-            FreeModTab.FREEMOD_TAB);
-    public static final RegistryObject<Block> STRIPPED_EBONY_WOOD = registerBlock("stripped_ebony_wood",
-            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_WOOD)),
-            FreeModTab.FREEMOD_TAB);
+//    public static final RegistryObject<Block> EBONY_LOG = registerBlock("ebony_log",
+//            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG)),
+//            FreeModTab.FREEMOD_TAB);
+//    public static final RegistryObject<Block> EBONY_WOOD = registerBlock("ebony_wood",
+//            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD)),
+//            FreeModTab.FREEMOD_TAB);
+//    public static final RegistryObject<Block> STRIPPED_EBONY_LOG = registerBlock("stripped_ebony_log",
+//            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_LOG)),
+//            FreeModTab.FREEMOD_TAB);
+//    public static final RegistryObject<Block> STRIPPED_EBONY_WOOD = registerBlock("stripped_ebony_wood",
+//            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_WOOD)),
+//            FreeModTab.FREEMOD_TAB);
 
     public static final RegistryObject<Block> CITRINE_ORE = registerBlock("citrine_ore",
             () -> new OreBlock(BlockBehaviour.Properties.of(Material.STONE) //part 40 UniformInt.of(3,7)の追加　経験値ドロップ
@@ -68,7 +81,6 @@ public class ModBlocks {
     public static final RegistryObject<Block> DEEPSLATE_CITRINE_ORE = registerBlock("deepslate_citrine_ore",
             () -> new OreBlock(BlockBehaviour.Properties.of(Material.STONE)
                     .strength(5f).requiresCorrectToolForDrops(), UniformInt.of(3,7)), FreeModTab.FREEMOD_TAB);
-
 
     //part 31 木の延焼
     public static final RegistryObject<Block> EBONY_PLANKS = registerBlock("ebony_planks",
@@ -88,8 +100,9 @@ public class ModBlocks {
                     return 5;
                 }
             },FreeModTab.FREEMOD_TAB);
+
     //part 32 葉の延焼
-    public static final RegistryObject<Block> EBONY_LEAVES = registerBlock("ebony_leaves",
+    public static final RegistryObject<Block> OBLIVION_LEAVES = registerBlock("oblivion_leaves",
             () -> new LeavesBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LEAVES)){
                 @Override
                 public boolean isFlammable(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
@@ -108,8 +121,8 @@ public class ModBlocks {
             },FreeModTab.FREEMOD_TAB);
 
     //part 32 苗木ブロック
-    public static final RegistryObject<Block> EBONY_SAPLING = registerBlock("ebony_sapling",
-            () -> new SaplingBlock(new EbonyTreeGrower(),BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)), FreeModTab.FREEMOD_TAB);
+    public static final RegistryObject<Block> OBLIVION_SAPLING = registerBlock("oblivion_sapling",
+            () -> new SaplingBlock(new OblivionTreeGrower(),BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)), FreeModTab.FREEMOD_TAB);
 
 
     private static <T extends Block> RegistryObject<T> registerBlockWithoutBlockItem(String name, Supplier<T> block) {
