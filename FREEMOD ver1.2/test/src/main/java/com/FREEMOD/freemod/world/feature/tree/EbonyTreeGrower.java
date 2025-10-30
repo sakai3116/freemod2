@@ -11,7 +11,7 @@ import java.util.Random;
 public class EbonyTreeGrower extends AbstractTreeGrower {
     @Override
     protected @Nullable Holder<? extends ConfiguredFeature<?, ?>> getConfiguredFeature(Random p_204307_, boolean p_204308_) {
-        return ModConfiguredFeatures.EBONY_SPAWN;
+        return ModConfiguredFeatures.OBLIVION_SPAWN;
     }
 }
 

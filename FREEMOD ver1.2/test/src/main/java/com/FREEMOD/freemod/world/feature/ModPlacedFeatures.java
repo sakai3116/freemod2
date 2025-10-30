@@ -8,8 +8,8 @@ import net.minecraft.world.level.levelgen.placement.*;
 
 public class ModPlacedFeatures {
     //part 32 木の生成場所など
-    public static final Holder<PlacedFeature> EBONY_PLACED = PlacementUtils.register("ebony_placed",
-            ModConfiguredFeatures.EBONY_SPAWN, VegetationPlacements.treePlacement(
+    public static final Holder<PlacedFeature> EBONY_PLACED = PlacementUtils.register("oblivion_placed",
+            ModConfiguredFeatures.OBLIVION_SPAWN, VegetationPlacements.treePlacement(
                     PlacementUtils.countExtra(3,0.1F,2)));
     //おそらくチャンクあたりの木の生成数を指定するもの。0.1F＝10％で生成確率
 
