@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/cross",
   "textures": {
-    "cross": "freemod:block/ebony_sapling"
+    "cross": "freemod:block/oblivion_sapling"
   }
 }
