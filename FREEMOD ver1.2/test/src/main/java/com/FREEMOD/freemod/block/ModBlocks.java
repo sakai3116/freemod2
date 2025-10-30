@@ -70,7 +70,7 @@ public class ModBlocks {
                     .strength(5f).requiresCorrectToolForDrops(), UniformInt.of(3,7)), FreeModTab.FREEMOD_TAB);
 
     //part 31 木の延焼
-    public static final RegistryObject<Block> EBONY_PLANKS = registerBlock("ebony_planks",
+    public static final RegistryObject<Block> OBLIVION_PLANKS = registerBlock("oblivion_planks",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)){
                 @Override
                 public boolean isFlammable(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
