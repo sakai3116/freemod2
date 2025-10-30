@@ -34,16 +34,9 @@ public class ModConfiguredFeatures {
             PlacementUtils.filteredByBlockSurvival(ModBlocks.OBLIVION_SAPLING.get()));
 
     public static final Holder<ConfiguredFeature<RandomFeatureConfiguration, ?>> OBLIVION_SPAWN =
-    public static final Holder<ConfiguredFeature<RandomFeatureConfiguration, ?>> OBLIVION_SPAWN =
             FeatureUtils.register("ebony_spawn", Feature.RANDOM_SELECTOR,
                     new RandomFeatureConfiguration(List.of(new WeightedPlacedFeature(OBLIVION_CHECKED,
                             0.5F)), OBLIVION_CHECKED));
-
-                    new RandomFeatureConfiguration(List.of(new WeightedPlacedFeature(OBLIVION_CHECKED,
-                            0.5F)), OBLIVION_CHECKED));
-
-
-
 
     //part 34 鉱石ブロック
     public static final List<OreConfiguration.TargetBlockState> OVERWORLD_PLATINUM_ORES = List.of(

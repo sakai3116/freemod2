@@ -46,18 +46,6 @@ public class ModBlocks {
             () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_WOOD)),
             FreeModTab.FREEMOD_TAB);
 
-    public static final RegistryObject<Block> OBLIVION_LOG = registerBlock("oblivion_log",
-            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG)),
-            FreeModTab.FREEMOD_TAB);
-    public static final RegistryObject<Block> OBLIVION_WOOD = registerBlock("oblivion_wood",
-            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD)),
-            FreeModTab.FREEMOD_TAB);
-    public static final RegistryObject<Block> STRIPPED_OBLIVION_LOG = registerBlock("stripped_oblivion_log",
-            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_LOG)),
-            FreeModTab.FREEMOD_TAB);
-    public static final RegistryObject<Block> STRIPPED_OBLIVION_WOOD = registerBlock("stripped_oblivion_wood",
-            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_WOOD)),
-            FreeModTab.FREEMOD_TAB);
 
     public static final RegistryObject<Block> ACID_TANK = registerBlock("acid_tank",
             () -> new AcidTank(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).noOcclusion()),FreeModTab.FREEMOD_TAB);
@@ -127,7 +115,6 @@ public class ModBlocks {
             },FreeModTab.FREEMOD_TAB);
 
     //part 32 葉の延焼
-    public static final RegistryObject<Block> OBLIVION_LEAVES = registerBlock("oblivion_leaves",
     public static final RegistryObject<Block> OBLIVION_LEAVES = registerBlock("oblivion_leaves",
             () -> new LeavesBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LEAVES)){
                 @Override
