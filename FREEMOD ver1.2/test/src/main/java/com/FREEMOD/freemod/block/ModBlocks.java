@@ -33,6 +33,7 @@ public class ModBlocks {
             DeferredRegister.create(ForgeRegistries.BLOCKS, FreeMod.MOD_ID);
     
     //これ以降に登録
+    //tree
     public static final RegistryObject<Block> OBLIVION_LOG = registerBlock("oblivion_log",
             () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG)),
             FreeModTab.FREEMOD_TAB);
@@ -46,9 +47,7 @@ public class ModBlocks {
             () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_WOOD)),
             FreeModTab.FREEMOD_TAB);
 
-
-    public static final RegistryObject<Block> ACID_TANK = registerBlock("acid_tank",
-            () -> new AcidTank(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).noOcclusion()),FreeModTab.FREEMOD_TAB);
+    //ore
     public static final RegistryObject<Block> PLATINUM_ORE = registerBlock("platinum_ore",
             () -> new OreBlock(BlockBehaviour.Properties.of(Material.STONE) //part 40 UniformInt.of(3,7)の追加　経験値ドロップ
                     .strength(5f).requiresCorrectToolForDrops(), UniformInt.of(3,7)), FreeModTab.FREEMOD_TAB);
@@ -56,10 +55,22 @@ public class ModBlocks {
             () -> new OreBlock(BlockBehaviour.Properties.of(Material.STONE) //part 40 UniformInt.of(3,7)の追加　経験値ドロップ
                     .strength(5f).requiresCorrectToolForDrops(), UniformInt.of(3,7)), FreeModTab.FREEMOD_TAB);
 
+    //Biome
+    public static final RegistryObject<Block> OBLIVION_GRASS_BLOCK = registerBlock("oblivion_grass_block",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.GRASS_BLOCK)), FreeModTab.FREEMOD_TAB);
+    public static final RegistryObject<Block> OBLIVION_DIRT = registerBlock("oblivion_dirt",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.DIRT)), FreeModTab.FREEMOD_TAB);
+    public static final RegistryObject<Block> OBLIVION_STONE = registerBlock("oblivion_stone",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE)), FreeModTab.FREEMOD_TAB);
+
+    //その他
+    public static final RegistryObject<Block> ACID_TANK = registerBlock("acid_tank",
+            () -> new AcidTank(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).noOcclusion()),FreeModTab.FREEMOD_TAB);
     public static final RegistryObject<Block> OBLIVION_PORTAL_GATE_BLOCK = registerBlock("oblivion_portal_gate_block",
             () -> new Block(BlockBehaviour.Properties.of(Material.STONE).strength(9f)),FreeModTab.FREEMOD_TAB);
-
     public static final RegistryObject<Block> OBLIVION_PORTAL = registerBlockWithoutBlockItem("oblivion_portal", OblivionPortalBlock::new);
+
+
 
 
     public static final RegistryObject<Block> CITRINE_ORE = registerBlock("citrine_ore",

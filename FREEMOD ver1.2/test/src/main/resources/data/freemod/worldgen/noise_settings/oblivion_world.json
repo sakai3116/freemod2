@@ -8,7 +8,7 @@
     "Properties": {
       "level": "0"
     },
-    "Name": "minecraft:water"
+    "Name": "freemod:acid_water"
   },
   "noise_router": {
     "final_density": {
@@ -366,7 +366,7 @@
                                       },
                                       "then_run": {
                                         "result_state": {
-                                          "Name": "minecraft:grass_block"
+                                          "Name": "freemod:oblivion_grass_block"
                                         },
                                         "type": "minecraft:block"
                                       },
@@ -397,7 +397,7 @@
                                     },
                                     "then_run": {
                                       "result_state": {
-                                        "Name": "minecraft:dirt"
+                                        "Name": "freemod:oblivion_dirt"
                                       },
                                       "type": "minecraft:block"
                                     },
@@ -462,7 +462,7 @@
                               "Properties": {
                                 "level": "0"
                               },
-                              "Name": "minecraft:water"
+                              "Name": "freemod:acid_water"
                             },
                             "type": "minecraft:block"
                           },
@@ -822,7 +822,7 @@
                                 "Properties": {
                                   "level": "0"
                                 },
-                                "Name": "minecraft:water"
+                                "Name": "freemod:acid_water"
                               },
                               "type": "minecraft:block"
                             }
@@ -1405,7 +1405,7 @@
                                             },
                                             "then_run": {
                                               "result_state": {
-                                                "Name": "minecraft:grass_block"
+                                                "Name": "freemod:oblivion_grass_block"
                                               },
                                               "type": "minecraft:block"
                                             },
@@ -1436,7 +1436,7 @@
                                           },
                                           "then_run": {
                                             "result_state": {
-                                              "Name": "minecraft:dirt"
+                                              "Name": "freemod:oblivion_dirt"
                                             },
                                             "type": "minecraft:block"
                                           },
@@ -1598,7 +1598,7 @@
                                     },
                                     "then_run": {
                                       "result_state": {
-                                        "Name": "minecraft:grass_block"
+                                        "Name": "freemod:oblivion_grass_block"
                                       },
                                       "type": "minecraft:block"
                                     },
@@ -1629,7 +1629,7 @@
                                   },
                                   "then_run": {
                                     "result_state": {
-                                      "Name": "minecraft:dirt"
+                                      "Name": "freemod:oblivion_dirt"
                                     },
                                     "type": "minecraft:block"
                                   },
@@ -1691,7 +1691,7 @@
                             "Properties": {
                               "level": "0"
                             },
-                            "Name": "minecraft:water"
+                            "Name": "freemod:acid_water"
                           },
                           "type": "minecraft:block"
                         },
@@ -1906,7 +1906,7 @@
                                     },
                                     "then_run": {
                                       "result_state": {
-                                        "Name": "minecraft:dirt"
+                                        "Name": "freemod:oblivion_dirt"
                                       },
                                       "type": "minecraft:block"
                                     },
@@ -2237,7 +2237,7 @@
                                       },
                                       "then_run": {
                                         "result_state": {
-                                          "Name": "minecraft:dirt"
+                                          "Name": "freemod:oblivion_dirt"
                                         },
                                         "type": "minecraft:block"
                                       },
@@ -2297,7 +2297,7 @@
                               },
                               "then_run": {
                                 "result_state": {
-                                  "Name": "minecraft:dirt"
+                                  "Name": "freemod:oblivion_dirt"
                                 },
                                 "type": "minecraft:block"
                               },
@@ -2520,7 +2520,7 @@
               "then_run": {
                 "type": "minecraft:block",
                 "result_state": {
-                  "Name": "minecraft:stone"
+                  "Name": "freemod:oblivion_stone"
                 }
               }
             }
