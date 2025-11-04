@@ -49,7 +49,7 @@ public class AcidFluid {
             .color(0xFF9ACD32)).slopeFindDistance(4).levelDecreasePerBlock(1).canMultiply()
             .block(() -> AcidFluid.ACID_BLOCK.get()).bucket(() -> ModItems.ACID_BUCKET.get());
 
-    public static final RegistryObject<LiquidBlock> ACID_BLOCK = ModBlocks.BLOCKS.register("onsen",
+    public static final RegistryObject<LiquidBlock> ACID_BLOCK = ModBlocks.BLOCKS.register("acid_water",
             () -> new LiquidBlock(() -> AcidFluid.ACID_FLUID.get(), BlockBehaviour.Properties.of(Material.WATER)
                     .noCollission().strength(100f).noDrops()));
 
