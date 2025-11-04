@@ -3,6 +3,9 @@
   "values": [
     "freemod:acid_tank",
     "freemod:platinum_ore",
-    "freemod:deepslate_platinum_ore"
+    "freemod:deepslate_platinum_ore",
+    "freemod:oblivion_stone",
+    "freemod:oblivion_dirt",
+    "freemod:oblivion_grass_block"
   ]
 }
