@@ -1,9 +1,9 @@
 package com.FREEMOD.freemod;
 
-import com.FREEMOD.freemod.block.ModBlocks;
 import com.FREEMOD.freemod.effect.ModEffects;
 import com.FREEMOD.freemod.fluid.AcidFluid;
-import com.FREEMOD.freemod.item.ModItems;
+import com.FREEMOD.freemod.register.BlockRegister;
+import com.FREEMOD.freemod.register.ItemRegister;
 import com.FREEMOD.freemod.villager.ModPOIs;
 import com.FREEMOD.freemod.world.dimension.ModDimensions;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
@@ -32,10 +32,18 @@ public class FreeMod {
         //Register the setup method for modloading
         IEventBus eventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
-        ModItems.register(eventBus);
-        ModBlocks.register(eventBus);
+        // blockの登録
+        BlockRegister.register(eventBus);
+        // itemの登録
+        ItemRegister.register(eventBus);
 
-//        OnsenFluid.register(eventBus);
+
+        //後々削除予定
+        //ModItems.register(eventBus);
+        //ModBlocks.register(eventBus);
+        //OnsenFluid.register(eventBus);
+
+
         AcidFluid.register(eventBus);
         ModEffects.register(eventBus);
 
