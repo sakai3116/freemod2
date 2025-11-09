@@ -1,9 +1,9 @@
 package com.FREEMOD.freemod.fluid;
 
-import com.FREEMOD.freemod.FreeMod;
-import com.FREEMOD.freemod.block.ModBlocks;
+import com.FREEMOD.freemod.main.FreeMod;
 import com.FREEMOD.freemod.effect.ModEffects;
-import com.FREEMOD.freemod.item.ModItems;
+import com.FREEMOD.freemod.register.BlockRegister;
+import com.FREEMOD.freemod.register.ItemRegister;
 import net.minecraft.core.BlockPos;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.sounds.SoundEvents;
@@ -47,9 +47,9 @@ public class AcidFluid {
             () -> ACID_FLUID.get(), () -> ACID_FLOWING.get(), FluidAttributes.builder(WATER_STILL_RL, WATER_FLOWING_RL)
             .density(15).luminosity(2).viscosity(5).sound(SoundEvents.WATER_AMBIENT).overlay(WATER_OVERLAY_RL)
             .color(0xFF9ACD32)).slopeFindDistance(4).levelDecreasePerBlock(1).canMultiply()
-            .block(() -> AcidFluid.ACID_BLOCK.get()).bucket(() -> ModItems.ACID_BUCKET.get());
+            .block(() -> AcidFluid.ACID_BLOCK.get()).bucket(() -> ItemRegister.ACID_BUCKET.get());
 
-    public static final RegistryObject<LiquidBlock> ACID_BLOCK = ModBlocks.BLOCKS.register("acid_water",
+    public static final RegistryObject<LiquidBlock> ACID_BLOCK = BlockRegister.BLOCKS.register("acid_water",
             () -> new LiquidBlock(() -> AcidFluid.ACID_FLUID.get(), BlockBehaviour.Properties.of(Material.WATER)
                     .noCollission().strength(100f).noDrops()));
 

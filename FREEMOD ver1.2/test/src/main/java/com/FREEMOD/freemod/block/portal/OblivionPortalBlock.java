@@ -1,9 +1,9 @@
-package com.FREEMOD.freemod.block.custom;
+package com.FREEMOD.freemod.block.portal;
 
-import com.FREEMOD.freemod.block.ModBlocks;
+import com.FREEMOD.freemod.register.BlockRegister;
 import com.FREEMOD.freemod.util.ModTags;
 import com.FREEMOD.freemod.world.dimension.ModDimensions;
-import com.FREEMOD.freemod.world.dimension.portal.ModTeleporter;
+import com.FREEMOD.freemod.world.dimension.portal.OblivionTeleporter;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.core.particles.ParticleTypes;
@@ -24,7 +24,6 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.level.block.state.properties.EnumProperty;
-import net.minecraft.world.level.levelgen.RandomSource;
 import net.minecraft.world.level.material.Material;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.VoxelShape;
@@ -130,9 +129,9 @@ public class OblivionPortalBlock extends Block{
                     if(minecraftserver != null) {
                         ServerLevel destinationWorld = minecraftserver.getLevel(destination);
                         if(destinationWorld != null && minecraftserver.isNetherEnabled() && !entity.isPassenger()) {
-                            entity.level.getProfiler().push("kaupen_portal");
+                            entity.level.getProfiler().push("oblivion_portal");
                             entity.setPortalCooldown();
-                            entity.changeDimension(destinationWorld, new ModTeleporter(destinationWorld));
+                            entity.changeDimension(destinationWorld, new OblivionTeleporter(destinationWorld));
                             entity.level.getProfiler().pop();
                         }
                     }
@@ -300,7 +299,7 @@ public class OblivionPortalBlock extends Block{
                     }
 
                     Block block = blockstate.getBlock();
-                    if (block == ModBlocks.OBLIVION_PORTAL.get()) {
+                    if (block == BlockRegister.OBLIVION_PORTAL.get()) {
                         ++this.portalBlockCount;
                     }
 
@@ -338,7 +337,7 @@ public class OblivionPortalBlock extends Block{
 
         protected boolean canConnect(BlockState pos) {
             Block block = pos.getBlock();
-            return pos.isAir() || block == ModBlocks.OBLIVION_PORTAL.get();
+            return pos.isAir() || block == BlockRegister.OBLIVION_PORTAL.get();
         }
 
         public boolean isValid() {
@@ -350,7 +349,7 @@ public class OblivionPortalBlock extends Block{
                 BlockPos blockpos = this.bottomLeft.relative(this.rightDir, i);
 
                 for(int j = 0; j < this.height; ++j) {
-                    this.level.setBlock(blockpos.above(j), ModBlocks.OBLIVION_PORTAL.get().defaultBlockState().setValue(OblivionPortalBlock.AXIS, this.axis), 18);
+                    this.level.setBlock(blockpos.above(j), BlockRegister.OBLIVION_PORTAL.get().defaultBlockState().setValue(OblivionPortalBlock.AXIS, this.axis), 18);
                 }
             }
 

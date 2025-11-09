@@ -1,6 +1,6 @@
 package com.FREEMOD.freemod.world;
 
-import com.FREEMOD.freemod.FreeMod;
+import com.FREEMOD.freemod.main.FreeMod;
 import com.FREEMOD.freemod.world.gen.ModOreGeneration;
 import com.FREEMOD.freemod.world.gen.ModTreeGeneration;
 import net.minecraftforge.event.world.BiomeLoadingEvent;

@@ -1,7 +1,7 @@
 ////温泉　水中にいる時、水中呼吸＆体力増強を付与
 //package com.FREEMOD.freemod.fluid;
 //
-//import com.FREEMOD.freemod.FreeMod;
+//import com.FREEMOD.freemod.main.FreeMod;
 //import com.FREEMOD.freemod.block.ModBlocks;
 //import com.FREEMOD.freemod.item.ModItems;
 //import net.minecraft.core.BlockPos;

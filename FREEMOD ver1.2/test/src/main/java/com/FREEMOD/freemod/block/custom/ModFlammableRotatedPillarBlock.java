@@ -1,6 +1,6 @@
 package com.FREEMOD.freemod.block.custom;
 
-import com.FREEMOD.freemod.block.ModBlocks;
+import com.FREEMOD.freemod.register.BlockRegister;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.world.item.AxeItem;
@@ -34,11 +34,11 @@ public class ModFlammableRotatedPillarBlock extends RotatedPillarBlock {
     @Override
     public @Nullable BlockState getToolModifiedState(BlockState state, UseOnContext context, ToolAction toolAction, boolean simulate) {
         if (context.getItemInHand().getItem() instanceof AxeItem){
-            if (state.is(ModBlocks.OBLIVION_LOG.get())) {
-                return ModBlocks.STRIPPED_OBLIVION_LOG.get().defaultBlockState().setValue(AXIS, state.getValue(AXIS));
+            if (state.is(BlockRegister.OBLIVION_LOG.get())) {
+                return BlockRegister.STRIPPED_OBLIVION_LOG.get().defaultBlockState().setValue(AXIS, state.getValue(AXIS));
             }
-            if (state.is(ModBlocks.OBLIVION_WOOD.get())) {
-                return ModBlocks.STRIPPED_OBLIVION_WOOD.get().defaultBlockState().setValue(AXIS, state.getValue(AXIS));
+            if (state.is(BlockRegister.OBLIVION_WOOD.get())) {
+                return BlockRegister.STRIPPED_OBLIVION_WOOD.get().defaultBlockState().setValue(AXIS, state.getValue(AXIS));
             }
 
         }

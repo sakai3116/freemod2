@@ -1,6 +1,6 @@
 //package com.FREEMOD.freemod.item.custom;
 //
-//import com.FREEMOD.freemod.item.FreeModTab;
+//import com.FREEMOD.freemod.main.FreeModTab;
 //import net.minecraft.core.BlockPos;
 //import net.minecraft.world.InteractionHand;
 //import net.minecraft.world.InteractionResultHolder;

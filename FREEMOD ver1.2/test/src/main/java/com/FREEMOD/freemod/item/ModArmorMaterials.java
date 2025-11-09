@@ -2,7 +2,8 @@ package com.FREEMOD.freemod.item;
 
 import java.util.function.Supplier;
 
-import com.FREEMOD.freemod.FreeMod;
+import com.FREEMOD.freemod.main.FreeMod;
+import com.FREEMOD.freemod.register.ItemRegister;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.util.LazyLoadedValue;
@@ -12,7 +13,7 @@ import net.minecraft.world.item.crafting.Ingredient;
 
 public enum ModArmorMaterials implements ArmorMaterial {
     PLATINUM("platinum", 30, new int[]{3, 6, 7, 4}, 20, SoundEvents.ARMOR_EQUIP_GOLD,
-            2.0F, 0.0F, () -> Ingredient.of(ModItems.PLATINUM_INGOT.get()));//防具のテクスチャは"platinum"に依存する
+            2.0F, 0.0F, () -> Ingredient.of(ItemRegister.PLATINUM_INGOT.get()));//防具のテクスチャは"platinum"に依存する
 
     private static final int[] HEALTH_PER_SLOT = new int[]{13, 15, 16, 11};
     private final String name;

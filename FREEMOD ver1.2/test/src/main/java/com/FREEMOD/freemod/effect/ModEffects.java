@@ -1,6 +1,6 @@
 package com.FREEMOD.freemod.effect;
 
-import com.FREEMOD.freemod.FreeMod;
+import com.FREEMOD.freemod.main.FreeMod;
 import net.minecraft.world.effect.MobEffect;
 import net.minecraft.world.effect.MobEffectCategory;
 import net.minecraftforge.eventbus.api.IEventBus;
