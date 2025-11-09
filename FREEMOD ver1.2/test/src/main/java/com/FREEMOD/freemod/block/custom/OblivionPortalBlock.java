@@ -3,7 +3,7 @@ package com.FREEMOD.freemod.block.custom;
 import com.FREEMOD.freemod.block.ModBlocks;
 import com.FREEMOD.freemod.util.ModTags;
 import com.FREEMOD.freemod.world.dimension.ModDimensions;
-import com.FREEMOD.freemod.world.dimension.portal.ModTeleporter;
+import com.FREEMOD.freemod.world.dimension.portal.OblivionTeleporter;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.core.particles.ParticleTypes;
@@ -24,7 +24,6 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.level.block.state.properties.EnumProperty;
-import net.minecraft.world.level.levelgen.RandomSource;
 import net.minecraft.world.level.material.Material;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.VoxelShape;
@@ -130,9 +129,9 @@ public class OblivionPortalBlock extends Block{
                     if(minecraftserver != null) {
                         ServerLevel destinationWorld = minecraftserver.getLevel(destination);
                         if(destinationWorld != null && minecraftserver.isNetherEnabled() && !entity.isPassenger()) {
-                            entity.level.getProfiler().push("kaupen_portal");
+                            entity.level.getProfiler().push("oblivion_portal");
                             entity.setPortalCooldown();
-                            entity.changeDimension(destinationWorld, new ModTeleporter(destinationWorld));
+                            entity.changeDimension(destinationWorld, new OblivionTeleporter(destinationWorld));
                             entity.level.getProfiler().pop();
                         }
                     }

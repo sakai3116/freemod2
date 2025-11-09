@@ -30,10 +30,10 @@ import javax.annotation.Nullable;
 import java.util.*;
 import java.util.function.Function;
 
-public class ModTeleporter implements ITeleporter {
+public class OblivionTeleporter implements ITeleporter {
     protected final ServerLevel level;
 
-    public ModTeleporter(ServerLevel worldIn) {
+    public OblivionTeleporter(ServerLevel worldIn) {
         this.level = worldIn;
     }
 
