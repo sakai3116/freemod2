@@ -2,7 +2,7 @@ package com.FREEMOD.freemod.item;
 
 import java.util.function.Supplier;
 
-import com.FREEMOD.freemod.FreeMod;
+import com.FREEMOD.freemod.main.FreeMod;
 import com.FREEMOD.freemod.register.ItemRegister;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;

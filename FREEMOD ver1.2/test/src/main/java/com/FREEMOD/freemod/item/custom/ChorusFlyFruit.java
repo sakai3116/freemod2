@@ -1,7 +1,7 @@
 //1-29最終作業ライン：アイテムを１スタック64までOk、浮遊、低速落下の効果確認　25-1-29
 package com.FREEMOD.freemod.item.custom;
 
-import com.FREEMOD.freemod.item.FreeModTab;
+import com.FREEMOD.freemod.main.tab.FreeModTab;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.LivingEntity;

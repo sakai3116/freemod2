@@ -1,7 +1,7 @@
 package com.FREEMOD.freemod.villager;
 
 
-import com.FREEMOD.freemod.FreeMod;
+import com.FREEMOD.freemod.main.FreeMod;
 import com.FREEMOD.freemod.register.BlockRegister;
 import net.minecraft.world.entity.ai.village.poi.PoiType;
 import net.minecraftforge.eventbus.api.IEventBus;

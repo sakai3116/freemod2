@@ -1,6 +1,6 @@
 package com.FREEMOD.freemod.world.dimension.portal;
 
-import com.FREEMOD.freemod.block.custom.OblivionPortalBlock;
+import com.FREEMOD.freemod.block.portal.OblivionPortalBlock;
 import com.FREEMOD.freemod.register.BlockRegister;
 import com.FREEMOD.freemod.villager.ModPOIs;
 import com.FREEMOD.freemod.world.dimension.ModDimensions;
@@ -216,7 +216,7 @@ public class OblivionTeleporter implements ITeleporter {
 //package com.FREEMOD.freemod.world.dimension.portal;
 //
 //import com.FREEMOD.freemod.block.ModBlocks;
-//import com.FREEMOD.freemod.block.custom.OblivionPortalBlock;
+//import com.FREEMOD.freemod.block.portal.OblivionPortalBlock;
 //import com.FREEMOD.freemod.villager.ModPOIs;
 //import com.FREEMOD.freemod.world.dimension.ModDimensions;
 //import net.minecraft.BlockUtil;

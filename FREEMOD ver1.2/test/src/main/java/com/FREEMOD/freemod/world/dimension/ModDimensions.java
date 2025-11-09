@@ -1,14 +1,11 @@
 package com.FREEMOD.freemod.world.dimension;
 
-import com.FREEMOD.freemod.FreeMod;
-import cpw.mods.modlauncher.api.ITransformationService;
+import com.FREEMOD.freemod.main.FreeMod;
 import net.minecraft.core.Registry;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.dimension.DimensionType;
-
-import java.awt.*;
 
 public class ModDimensions {
     public static final ResourceKey<Level> OBLIVION_KEY = ResourceKey.create(Registry.DIMENSION_REGISTRY,

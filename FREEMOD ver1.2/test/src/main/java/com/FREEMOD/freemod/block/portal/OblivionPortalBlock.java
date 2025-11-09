@@ -1,4 +1,4 @@
-package com.FREEMOD.freemod.block.custom;
+package com.FREEMOD.freemod.block.portal;
 
 import com.FREEMOD.freemod.register.BlockRegister;
 import com.FREEMOD.freemod.util.ModTags;

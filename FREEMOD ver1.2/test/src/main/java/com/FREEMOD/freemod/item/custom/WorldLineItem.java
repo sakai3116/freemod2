@@ -1,7 +1,7 @@
 package com.FREEMOD.freemod.item.custom;
 
-import com.FREEMOD.freemod.block.custom.OblivionPortalBlock;
-import com.FREEMOD.freemod.item.FreeModTab;
+import com.FREEMOD.freemod.block.portal.OblivionPortalBlock;
+import com.FREEMOD.freemod.main.tab.FreeModTab;
 import com.FREEMOD.freemod.register.BlockRegister;
 import com.FREEMOD.freemod.world.dimension.ModDimensions;
 import net.minecraft.core.BlockPos;

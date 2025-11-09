@@ -1,10 +1,10 @@
 package com.FREEMOD.freemod.register;
 
-import com.FREEMOD.freemod.FreeMod;
+import com.FREEMOD.freemod.main.FreeMod;
 import com.FREEMOD.freemod.block.custom.AcidTank;
 import com.FREEMOD.freemod.block.custom.ModFlammableRotatedPillarBlock;
-import com.FREEMOD.freemod.block.custom.OblivionPortalBlock;
-import com.FREEMOD.freemod.item.FreeModTab;
+import com.FREEMOD.freemod.block.portal.OblivionPortalBlock;
+import com.FREEMOD.freemod.main.tab.FreeModTab;
 import com.FREEMOD.freemod.world.feature.tree.OblivionTreeGrower;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
@@ -69,7 +69,7 @@ public class BlockRegister {
         RegistryObject<T> block = BLOCKS.register(name, supplier);
         // ブロックアイテムをアイテムレジストリに追加
         ItemRegister.ITEMS.register(name,
-                () -> new BlockItem(block.get(), new Item.Properties().tab(FreeModTab.FREEMOD_TAB)));
+                () -> new BlockItem(block.get(), new Item.Properties().tab(FreeModTab.FREEMODBLOCK_TAB)));
         return block;
     }
 

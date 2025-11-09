@@ -1,4 +1,4 @@
-package com.FREEMOD.freemod;
+package com.FREEMOD.freemod.main;
 
 import com.FREEMOD.freemod.effect.ModEffects;
 import com.FREEMOD.freemod.fluid.AcidFluid;

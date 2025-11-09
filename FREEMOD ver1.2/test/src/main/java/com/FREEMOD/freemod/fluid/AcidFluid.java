@@ -1,6 +1,6 @@
 package com.FREEMOD.freemod.fluid;
 
-import com.FREEMOD.freemod.FreeMod;
+import com.FREEMOD.freemod.main.FreeMod;
 import com.FREEMOD.freemod.effect.ModEffects;
 import com.FREEMOD.freemod.register.BlockRegister;
 import com.FREEMOD.freemod.register.ItemRegister;

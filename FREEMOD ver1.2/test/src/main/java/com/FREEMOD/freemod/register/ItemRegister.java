@@ -1,12 +1,12 @@
 package com.FREEMOD.freemod.register;
 
-import com.FREEMOD.freemod.FreeMod;
+import com.FREEMOD.freemod.main.FreeMod;
 import com.FREEMOD.freemod.fluid.AcidFluid;
-import com.FREEMOD.freemod.item.FreeModTab;
 import com.FREEMOD.freemod.item.ModArmorMaterials;
 import com.FREEMOD.freemod.item.ModTiers;
 import com.FREEMOD.freemod.item.custom.ChorusFlyFruit;
 import com.FREEMOD.freemod.item.custom.WorldLineItem;
+import com.FREEMOD.freemod.main.tab.FreeModTab;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.item.*;
 import net.minecraftforge.eventbus.api.IEventBus;
