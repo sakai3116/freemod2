@@ -1,7 +1,7 @@
 package com.FREEMOD.freemod.world.dimension.portal;
 
-import com.FREEMOD.freemod.block.ModBlocks;
 import com.FREEMOD.freemod.block.custom.OblivionPortalBlock;
+import com.FREEMOD.freemod.register.BlockRegister;
 import com.FREEMOD.freemod.villager.ModPOIs;
 import com.FREEMOD.freemod.world.dimension.ModDimensions;
 import net.minecraft.BlockUtil;
@@ -114,7 +114,7 @@ public class OblivionTeleporter implements ITeleporter {
             for(int l1 = -1; l1 < 2; ++l1) {
                 for(int k2 = 0; k2 < 2; ++k2) {
                     for(int i3 = -1; i3 < 3; ++i3) {
-                        BlockState blockstate1 = i3 < 0 ? ModBlocks.OBLIVION_PORTAL_GATE_BLOCK.get().defaultBlockState() : Blocks.AIR.defaultBlockState();
+                        BlockState blockstate1 = i3 < 0 ? BlockRegister.OBLIVION_PORTAL_GATE_BLOCK.get().defaultBlockState() : Blocks.AIR.defaultBlockState();
                         mutablePos.setWithOffset(blockpos, k2 * direction.getStepX() + l1 * direction1.getStepX(), i3, k2 * direction.getStepZ() + l1 * direction1.getStepZ());
                         this.level.setBlockAndUpdate(mutablePos, blockstate1);
                     }
@@ -126,12 +126,12 @@ public class OblivionTeleporter implements ITeleporter {
             for(int i2 = -1; i2 < 4; ++i2) {
                 if (k1 == -1 || k1 == 2 || i2 == -1 || i2 == 3) {
                     mutablePos.setWithOffset(blockpos, k1 * direction.getStepX(), i2, k1 * direction.getStepZ());
-                    this.level.setBlock(mutablePos, ModBlocks.OBLIVION_PORTAL_GATE_BLOCK.get().defaultBlockState(), 3);
+                    this.level.setBlock(mutablePos, BlockRegister.OBLIVION_PORTAL_GATE_BLOCK.get().defaultBlockState(), 3);
                 }
             }
         }
 
-        BlockState kaupenPortal = ModBlocks.OBLIVION_PORTAL.get().defaultBlockState().setValue(OblivionPortalBlock.AXIS, axis);
+        BlockState kaupenPortal = BlockRegister.OBLIVION_PORTAL.get().defaultBlockState().setValue(OblivionPortalBlock.AXIS, axis);
 
         for(int j2 = 0; j2 < 2; ++j2) {
             for(int l2 = 0; l2 < 3; ++l2) {

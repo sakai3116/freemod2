@@ -5,6 +5,7 @@ import com.FREEMOD.freemod.block.custom.AcidTank;
 import com.FREEMOD.freemod.block.custom.ModFlammableRotatedPillarBlock;
 import com.FREEMOD.freemod.block.custom.OblivionPortalBlock;
 import com.FREEMOD.freemod.item.FreeModTab;
+import com.FREEMOD.freemod.world.feature.tree.OblivionTreeGrower;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
@@ -43,6 +44,10 @@ public class BlockRegister {
             () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_LOG)));
     public static final RegistryObject<Block> STRIPPED_OBLIVION_WOOD = registerBlockItem("stripped_oblivion_wood",
             () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_WOOD)));
+    public static final RegistryObject<Block> OBLIVION_LEAVES = registerBlockItem("oblivion_leaves",
+            () -> new LeavesBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LEAVES)));
+    public static final RegistryObject<SaplingBlock> OBLIVION_SAPLING = registerBlockItem("oblivion_sapling",
+            () -> new SaplingBlock(new OblivionTreeGrower(),BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
     // ore
     public static final RegistryObject<Block> PLATINUM_ORE = registerBlockItem("platinum_ore",
             () -> new OreBlock(BlockBehaviour.Properties.of(Material.STONE) //part 40 UniformInt.of(3,7)の追加　経験値ドロップ

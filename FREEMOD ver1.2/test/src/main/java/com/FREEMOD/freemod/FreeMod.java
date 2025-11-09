@@ -69,8 +69,8 @@ public class FreeMod {
         ItemBlockRenderTypes.setRenderLayer(AcidFluid.ACID_FLUID.get(), RenderType.translucent());
         ItemBlockRenderTypes.setRenderLayer(AcidFluid.ACID_FLOWING.get(), RenderType.translucent());
 
-        ItemBlockRenderTypes.setRenderLayer(ModBlocks.OBLIVION_LEAVES.get(),RenderType.cutout());
-        ItemBlockRenderTypes.setRenderLayer(ModBlocks.OBLIVION_SAPLING.get(),RenderType.cutout());
+        ItemBlockRenderTypes.setRenderLayer(BlockRegister.OBLIVION_LEAVES.get(),RenderType.cutout());
+        ItemBlockRenderTypes.setRenderLayer(BlockRegister.OBLIVION_SAPLING.get(),RenderType.cutout());
 
 
     }

@@ -1,6 +1,6 @@
 package com.FREEMOD.freemod.block.custom;
 
-import com.FREEMOD.freemod.block.ModBlocks;
+import com.FREEMOD.freemod.register.BlockRegister;
 import com.FREEMOD.freemod.util.ModTags;
 import com.FREEMOD.freemod.world.dimension.ModDimensions;
 import com.FREEMOD.freemod.world.dimension.portal.OblivionTeleporter;
@@ -299,7 +299,7 @@ public class OblivionPortalBlock extends Block{
                     }
 
                     Block block = blockstate.getBlock();
-                    if (block == ModBlocks.OBLIVION_PORTAL.get()) {
+                    if (block == BlockRegister.OBLIVION_PORTAL.get()) {
                         ++this.portalBlockCount;
                     }
 
@@ -337,7 +337,7 @@ public class OblivionPortalBlock extends Block{
 
         protected boolean canConnect(BlockState pos) {
             Block block = pos.getBlock();
-            return pos.isAir() || block == ModBlocks.OBLIVION_PORTAL.get();
+            return pos.isAir() || block == BlockRegister.OBLIVION_PORTAL.get();
         }
 
         public boolean isValid() {
@@ -349,7 +349,7 @@ public class OblivionPortalBlock extends Block{
                 BlockPos blockpos = this.bottomLeft.relative(this.rightDir, i);
 
                 for(int j = 0; j < this.height; ++j) {
-                    this.level.setBlock(blockpos.above(j), ModBlocks.OBLIVION_PORTAL.get().defaultBlockState().setValue(OblivionPortalBlock.AXIS, this.axis), 18);
+                    this.level.setBlock(blockpos.above(j), BlockRegister.OBLIVION_PORTAL.get().defaultBlockState().setValue(OblivionPortalBlock.AXIS, this.axis), 18);
                 }
             }
 
