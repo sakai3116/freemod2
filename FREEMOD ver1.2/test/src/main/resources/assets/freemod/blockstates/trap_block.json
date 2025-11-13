@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "camo_type=0": { "model": "freemod:block/trap_block" },
+    "camo_type=1": { "model": "minecraft:block/stone" },
+    "camo_type=2": { "model": "minecraft:block/dirt" },
+    "camo_type=3": { "model": "minecraft:block/grass_block_top" }
+  }
+}
