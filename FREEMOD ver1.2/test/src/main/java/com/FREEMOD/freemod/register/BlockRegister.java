@@ -36,8 +36,7 @@ public class BlockRegister {
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.DIRT)));
     public static final RegistryObject<Block> OBLIVION_STONE = registerBlockItem("oblivion_stone",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE)));
-    public static final RegistryObject<Block> TRAP_BLOCK = registerBlockItem("trap_block",
-            () -> new TrapBlock(BlockBehaviour.Properties.copy(Blocks.MAGMA_BLOCK)));//設置時に付近のブロックの情報を検出し設置ブロック自体の見た目を置き換える
+
     // tree
     public static final RegistryObject<Block> OBLIVION_LOG = registerBlockItem("oblivion_log",
             () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG)));
@@ -64,6 +63,8 @@ public class BlockRegister {
     public static final RegistryObject<Block> OBLIVION_PORTAL_GATE_BLOCK = registerBlockItem("oblivion_portal_gate_block",
             () -> new Block(BlockBehaviour.Properties.of(Material.STONE).strength(9f)));
     public static final RegistryObject<Block> OBLIVION_PORTAL = BLOCKS.register("oblivion_portal", OblivionPortalBlock::new);
+    public static final RegistryObject<Block> TRAP_BLOCK = registerBlockItem("trap_block",
+            () -> new TrapBlock(BlockBehaviour.Properties.copy(Blocks.MAGMA_BLOCK)));//設置時に付近のブロックの情報を検出し設置ブロック自体の見た目を置き換える
 
 
     // ブロックアイテム作成用メソッド 基本的に触らない

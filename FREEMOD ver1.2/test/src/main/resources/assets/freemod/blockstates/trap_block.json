@@ -1,8 +1,11 @@
 {
   "variants": {
     "camo_type=0": { "model": "freemod:block/trap_block" },
-    "camo_type=1": { "model": "minecraft:block/stone" },
-    "camo_type=2": { "model": "minecraft:block/dirt" },
-    "camo_type=3": { "model": "minecraft:block/grass_block_top" }
+    "camo_type=1": { "model": "minecraft:block/dirt" },
+    "camo_type=2": { "model": "minecraft:block/stone" },
+    "camo_type=3": { "model": "minecraft:block/oak_planks" },
+    "camo_type=4": { "model": "minecraft:block/sand" },
+    "camo_type=5": { "model": "minecraft:block/infested_stone" },
+    "camo_type=6": { "model": "minecraft:block/diamond_block" }
   }
 }

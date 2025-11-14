@@ -24,7 +24,7 @@ public class TrapBlock extends Block {
     @Override
     public void stepOn(Level level, BlockPos pos, BlockState state, Entity entity) {
         if (!entity.isSteppingCarefully() && entity instanceof LivingEntity && !level.isClientSide) {
-            entity.hurt(DamageSource.HOT_FLOOR, 1.0F);
+            entity.hurt(DamageSource.SWEET_BERRY_BUSH, 1.0F);
         }
         super.stepOn(level, pos, state, entity);
     }
@@ -40,12 +40,20 @@ public class TrapBlock extends Block {
         int type = 0;
 
         // 真下のブロックが何か判定して type を変更
-        if (blockBelow.is(Blocks.STONE)) {
-            type = 1; // 石に擬態
-        } else if (blockBelow.is(Blocks.DIRT)) {
-            type = 2; // 土に擬態
-        } else if (blockBelow.is(Blocks.GRASS_BLOCK)) {
-            type = 3; // 草ブロックに擬態
+        if (blockBelow.is(Blocks.DIRT)) {
+            type = 1;
+        } else if (blockBelow.is(Blocks.STONE)) {
+            type = 2;
+        } else if (blockBelow.is(Blocks.OAK_PLANKS)) {
+            type = 3;
+        } else if (blockBelow.is(Blocks.SAND)){
+            type = 4;
+        } else if (blockBelow.is(Blocks.INFESTED_STONE)){
+            type = 5;
+        } else if (blockBelow.is(Blocks.OXIDIZED_CUT_COPPER)){
+            type = 6;
+        } else if (blockBelow.is(Blocks.DIAMOND_BLOCK)){
+
         }
         return this.defaultBlockState().setValue(CAMO_TYPE, type);
     }
