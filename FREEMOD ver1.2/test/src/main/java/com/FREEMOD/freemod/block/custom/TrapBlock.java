@@ -14,7 +14,7 @@ import org.jetbrains.annotations.Nullable;
 
 public class TrapBlock extends Block {
 
-    public static final IntegerProperty CAMO_TYPE = IntegerProperty.create("camo_type", 0, 3);
+    public static final IntegerProperty CAMO_TYPE = IntegerProperty.create("camo_type", 0, 7);
 
     public TrapBlock(Properties properties) {
         super(properties);
@@ -53,7 +53,7 @@ public class TrapBlock extends Block {
         } else if (blockBelow.is(Blocks.OXIDIZED_CUT_COPPER)){
             type = 6;
         } else if (blockBelow.is(Blocks.DIAMOND_BLOCK)){
-
+            type = 7;
         }
         return this.defaultBlockState().setValue(CAMO_TYPE, type);
     }

@@ -6,6 +6,7 @@
     "camo_type=3": { "model": "minecraft:block/oak_planks" },
     "camo_type=4": { "model": "minecraft:block/sand" },
     "camo_type=5": { "model": "minecraft:block/infested_stone" },
-    "camo_type=6": { "model": "minecraft:block/diamond_block" }
+    "camo_type=6": { "model": "minecraft:block/oxidized_cut_copper" },
+    "camo_type=7": { "model": "minecraft:block/diamond_block" }
   }
 }
