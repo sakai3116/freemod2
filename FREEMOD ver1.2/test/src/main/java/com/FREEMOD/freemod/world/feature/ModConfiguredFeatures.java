@@ -27,6 +27,7 @@ public class ModConfiguredFeatures {
                     BlockStateProvider.simple(BlockRegister.OBLIVION_LEAVES.get()),
                     new BlobFoliagePlacer(ConstantInt.of(2), ConstantInt.of(0), 4),
                     new TwoLayersFeatureSize(1, 0, 2))
+                    //.dirt(BlockStateProvider.simple(BlockRegister.OBLIVION_DIRT.get())).build());
                     .dirt(BlockStateProvider.simple(Blocks.DIRT)).build());//成長＆生成時に木の根元のブロックを土に
 
     //CF:構成済みの機能を作成 -> PF：場所機能を作成 -> CF:構成済みの機能を作成 -> PF:場所機能を作成

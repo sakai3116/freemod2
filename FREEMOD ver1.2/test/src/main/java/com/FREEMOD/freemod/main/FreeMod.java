@@ -2,6 +2,7 @@ package com.FREEMOD.freemod.main;
 
 import com.FREEMOD.freemod.effect.ModEffects;
 import com.FREEMOD.freemod.fluid.AcidFluid;
+import com.FREEMOD.freemod.register.BiomeRegister;
 import com.FREEMOD.freemod.register.BlockRegister;
 import com.FREEMOD.freemod.register.ItemRegister;
 import com.FREEMOD.freemod.villager.ModPOIs;
@@ -36,6 +37,8 @@ public class FreeMod {
         BlockRegister.register(eventBus);
         // itemの登録
         ItemRegister.register(eventBus);
+        // Biomeの登録
+        BiomeRegister.register(eventBus);
 
 
         //後々削除予定
