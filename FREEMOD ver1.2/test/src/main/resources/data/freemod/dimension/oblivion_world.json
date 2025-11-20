@@ -20,7 +20,7 @@
           }
         },
         {
-          "biome": "freemod:oblivion_plains",
+          "biome": "freemod:oblivion_mountains",
           "parameters": {
             "temperature": 0.75,
             "humidity": 0.52,

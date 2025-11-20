@@ -14,19 +14,11 @@ import net.minecraftforge.registries.ForgeRegistries;
 public class BiomeRegister {
     public static final DeferredRegister<Biome> BIOMES = DeferredRegister.create(ForgeRegistries.BIOMES, FreeMod.MOD_ID);
 
-    public static final ResourceKey<Biome> CRYSTAL_PLAINS = register("crystal_plains");
-    public static final ResourceKey<Biome> CRYSTAL_MOOR = register("crystal_moor");
-    public static final ResourceKey<Biome> NULLSCAPE_PLAINS = register("nullscape_plains");
-    public static final ResourceKey<Biome> AUTUMN_PLAINS = register("autumn_plains");
-    public static final ResourceKey<Biome> OBLIVION_PLAINS = register("oblivion_plains");
 
+    public static final ResourceKey<Biome> OBLIVION_MOUNTAINS = register("oblivion_mountains");
 
     public static void toDictionary() {
-        BiomeDictionary.addTypes(CRYSTAL_PLAINS, BiomeDictionary.Type.WET, BiomeDictionary.Type.PLAINS);
-        BiomeDictionary.addTypes(CRYSTAL_MOOR, BiomeDictionary.Type.WET, BiomeDictionary.Type.PLAINS);
-        BiomeDictionary.addTypes(NULLSCAPE_PLAINS, BiomeDictionary.Type.WET, BiomeDictionary.Type.PLAINS);
-        BiomeDictionary.addTypes(AUTUMN_PLAINS, BiomeDictionary.Type.WET, BiomeDictionary.Type.PLAINS);
-        BiomeDictionary.addTypes(OBLIVION_PLAINS,BiomeDictionary.Type.COLD,BiomeDictionary.Type.PLAINS);
+        BiomeDictionary.addTypes(OBLIVION_MOUNTAINS,BiomeDictionary.Type.COLD,BiomeDictionary.Type.PLAINS);
     }
 
     private static ResourceLocation name(String name) {
